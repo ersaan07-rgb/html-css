@@ -1,0 +1,150 @@
+/* Сброс стандартных отступов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Цвет фона страницы, шрифт и размер текста */
+body {
+  background-color: #eef1ff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  color: #2b2d42;
+  line-height: 1.6;
+}
+
+/* Шапка */
+.header {
+  background-color: #6c63ff;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;            /* круглая фотография */
+  border: 5px solid #fff;        /* рамка */
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.avatar:hover {
+  transform: scale(1.08) rotate(3deg);
+}
+
+.header h1 {
+  font-size: 36px;
+}
+
+.profession {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Основной контейнер */
+.container {
+  max-width: 800px;
+  margin: 30px auto;             /* внешний отступ */
+  padding: 0 15px;
+}
+
+/* Блоки с рамками и скруглениями */
+.block {
+  background-color: #fff;
+  border: 2px solid #d9dcff;
+  border-radius: 15px;
+  padding: 25px;                 /* внутренний отступ */
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.block:hover {
+  border-color: #6c63ff;
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.25);
+  transform: translateY(-4px);
+}
+
+.block h2 {
+  color: #6c63ff;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+/* Списки навыков и увлечений */
+.skills,
+.hobbies {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills li,
+.hobbies li {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.skills li {
+  background-color: #e3e1ff;
+}
+
+.hobbies li {
+  background-color: #ffe5ec;
+}
+
+.skills li:hover {
+  background-color: #6c63ff;
+  color: #fff;
+}
+
+.hobbies li:hover {
+  background-color: #ff5d8f;
+  color: #fff;
+}
+
+/* Кнопка */
+.btn {
+  margin-top: 15px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #6c63ff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #4b43d6;
+  transform: scale(1.06);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+/* Сообщение после нажатия на кнопку (JavaScript) */
+.message {
+  margin-top: 15px;
+  color: #1b7a43;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* Для телефонов */
+@media (max-width: 600px) {
+  .header h1 { font-size: 28px; }
+}

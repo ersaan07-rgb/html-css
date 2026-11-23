@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой колледж</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== ШАПКА САЙТА (Header) ===== -->
+  <header class="header">
+    <div class="header-inner">
+      <!-- Логотип и название колледжа -->
+      <a href="#top" class="logo">
+        <span class="logo-icon">🎓</span>
+        <span class="logo-text">Мой колледж<small>Информационных технологий</small></span>
+      </a>
+
+      <!-- Навигационное меню -->
+      <nav class="nav">
+        <a href="#top">Главная</a>
+        <a href="#specialties">Специальности</a>
+        <a href="#news">Новости</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== ГЛАВНЫЙ БАННЕР ===== -->
+    <section class="banner">
+      <div class="banner-content">
+        <h1>Добро пожаловать в наш колледж!</h1>
+        <p>Получи востребованную профессию и начни карьеру в IT уже сегодня.</p>
+        <button class="btn" id="applyBtn">Подать заявку</button>
+      </div>
+    </section>
+
+    <!-- ===== НАШИ СПЕЦИАЛЬНОСТИ ===== -->
+    <section class="section" id="specialties">
+      <h2 class="section-title">Наши специальности</h2>
+      <div class="grid">
+        <div class="spec-card">
+          <div class="icon">💻</div>
+          <h3>Программное обеспечение</h3>
+          <p>Разработка сайтов, приложений и баз данных.</p>
+        </div>
+        <div class="spec-card">
+          <div class="icon">🌐</div>
+          <h3>Информационные системы</h3>
+          <p>Проектирование и поддержка IT-систем предприятий.</p>
+        </div>
+        <div class="spec-card">
+          <div class="icon">🛡️</div>
+          <h3>Кибербезопасность</h3>
+          <p>Защита данных и сетей от угроз.</p>
+        </div>
+        <div class="spec-card">
+          <div class="icon">🎨</div>
+          <h3>Веб-дизайн</h3>
+          <p>Создание современного дизайна интерфейсов.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== НОВОСТИ ===== -->
+    <section class="section news-section" id="news">
+      <h2 class="section-title">Новости</h2>
+      <div class="grid news-grid">
+        <article class="news-card">
+          <div class="news-img n1">📅</div>
+          <div class="news-body">
+            <span class="date">20 ноября 2026</span>
+            <h3>День открытых дверей</h3>
+            <p>Приглашаем абитуриентов и родителей познакомиться с колледжем.</p>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="news-img n2">🏆</div>
+          <div class="news-body">
+            <span class="date">15 ноября 2026</span>
+            <h3>Победа на олимпиаде</h3>
+            <p>Наши студенты заняли первое место на конкурсе по программированию.</p>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="news-img n3">🤝</div>
+          <div class="news-body">
+            <span class="date">10 ноября 2026</span>
+            <h3>Новые партнёры</h3>
+            <p>Подписаны соглашения с IT-компаниями о практике для студентов.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== ПОДВАЛ САЙТА (Footer) ===== -->
+  <footer class="footer" id="contacts">
+    <div class="footer-inner">
+      <div>
+        <h3>🎓 Мой колледж</h3>
+        <p>Готовим специалистов для цифрового будущего.</p>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <p>г. Астана, ул. Примерная, 1</p>
+        <p>+7 700 000 00 00</p>
+        <p>college@example.com</p>
+      </div>
+      <div>
+        <h3>Разделы</h3>
+        <p><a href="#specialties">Специальности</a></p>
+        <p><a href="#news">Новости</a></p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Мой колледж. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
